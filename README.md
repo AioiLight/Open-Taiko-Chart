@@ -16,6 +16,11 @@
 
 # 「Open Taiko Chart Infomation」の記法
 
-* エンコーディングは「UTF-8」で、改行コードは「CRLF」が推奨されます。
-* 「Open Taiko Chart Infomation」では、
+* エンコーディングは「BOM無し UTF-8」です。改行コードの指定はありません(理由は後述)。
+* 「Open Taiko Chart Infomation」では、フォーマットにJSONを採用しています。エンコーディングが「BOM無し UTF-8」である理由は、このJSONフォーマットで決まっているからです(HAVE TO ではなく MUST)。改行してもしなくても問題ありません。
+* JSONフォーマット採用しているため、多くのプログラミング言語ではデシリアライズが可能です。
+
+## 「Open Taiko Chart Infomation」の書き方
+
+
 
