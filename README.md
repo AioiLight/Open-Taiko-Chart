@@ -22,5 +22,27 @@
 
 ## 「Open Taiko Chart Infomation」の書き方
 
-
-
+```json
+{
+  "title": "The Sample M@ster",
+  "subtitle": "Sample Song",
+  "artist": [ "Tanaka Ichiro", "Tanaka Jiro", "Tanaka Saburo"],
+  "creator": [ "Suzuki Ichiro" ],
+  "audio": "Audio-Source.wav",
+  "background": "Background-Image.png",
+  "bpm": 160,
+  "courses":
+  [
+    {
+      "difficluty": "oni",
+      "level": 9,
+      "single": "Oni.tcc"
+    },
+    {
+      "difficluty": "edit",
+      "level": 10,
+      "single": "Edit.tcc"
+    }
+  ]
+}
+```
