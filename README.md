@@ -3,9 +3,9 @@
 
 # 「Open Taiko Chart」のファイル構成
 「Open Taiko Chart」では複数のファイルを使用し、「ひとつの作品」として成り立ちます。
-## 「Open Taiko Chart Infomation」 (.otci)
+## 「Open Taiko Chart Infomation」 (.tci)
 このファイルには、その太鼓譜の名前やアーティスト、使用する音源のファイル名などの作品の情報と、各種難易度である「Open Taiko Chart Course」の情報が格納されます。
-## 「Open Taiko Chart Course」 (.otcc)
+## 「Open Taiko Chart Course」 (.tcc)
 このファイルは、「Open Taiko Chart Infomation」から呼び出されます。このファイルには、実際の譜面内容が記述されます。
 ## その他のファイル
 譜面で使用する音源ファイルや、動画ファイルなどがこれに当てはまります。「Open Taiko Chart Infomation」と同じフォルダに入れておく必要があります。対応するコーデックやコンテナは、各ソフトウェアの実装で変わります。
