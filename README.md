@@ -22,6 +22,8 @@
 
 ## 「Open Taiko Chart Infomation」の書き方
 
+サンプル
+
 ```json
 {
   "title": "The Sample M@ster",
@@ -42,8 +44,33 @@
       "difficluty": "edit",
       "level": 10,
       "single": "Edit.tcc",
-      "double": [ "Edit_1P.tcc", "Edit_2P.tcc" ]
+      "multiple": [ "Edit_1P.tcc", "Edit_2P.tcc" ]
     }
   ]
 }
 ```
+
+これらは、譜面の基本的な情報を指定するものです。
+
+| 変数名 | 説明 | 種類 | 例 |
+| --- | --- | --- | --- |
+| title | その譜面のタイトルを指定する。 | 文字列 | ``"name": "The Sample M@ster"`` |
+| subtitle | その譜面のサブタイトルを指定する。 | 文字列 | ``"subtitle": "Sample Song"`` |
+| artist | その曲のアーティストを指定する。 | 配列、文字列 | ``"artist": [ "Tanaka Ichiro", "Tanaka Jiro", "Tanaka Saburo"]`` |
+| creator | その譜面の作成者を指定する。 | 配列、文字列 | ``"creator": [ "Suzuki Ichiro" ]`` |
+| audio | その曲のファイル名を指定する。対応しているコーデック、コンテナはソフトウェアによって異なる。 | 文字列 | ``"audio":  "Audio-Source.wav"`` |
+| background | 再生時に表示される背景画像・動画を指定する。対応しているコーデック、コンテナはソフトウェアによって異なる。 | 文字列 | ``"background": "Background-Image.png"`` |
+| bpm | その曲の基本BPMを指定する。 | 数値 | ``"bpm": 160`` |
+| courses | コースを情報を格納する。 | 配列、オブジェクト | (後述) |
+
+これらは、coursesの中のオブジェクトで使用可能なものです。各難易度の情報を指定するものです。
+
+| 変数名 | 説明 | 種類 | 例 |
+| --- | --- | --- | --- |
+| difficluty | その難易度の難易度を指定します。 | 文字列 | ``"difficluty": "oni"`` |
+| level | その難易度の難易度を指定します。 | 数値 | ``"level": 9`` |
+| single | その難易度の1人用譜面を指定します。 | 文字列 | ``"single": "Oni.tcc"`` |
+| multiple | その難易度のn人用譜面を指定します。 | 文字列 | ``"multiple": [ "Edit_1P.tcc", "Edit_2P.tcc" ]`` |
+| scoreinit | その難易度の初項を指定します。 | 数値 | ``"scoreinit": 800`` |
+| scorediff | その難易度の公差を指定します。 | 数値 | ``"scorediff": 200`` |
+| scoreshinuchi | その難易度の真打配点を指定します。 | 数値 | ``"scoreshinuchi": 1200`` |
