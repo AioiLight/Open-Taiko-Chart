@@ -41,7 +41,8 @@
     {
       "difficluty": "edit",
       "level": 10,
-      "single": "Edit.tcc"
+      "single": "Edit.tcc",
+      "double": [ "Edit_1P.tcc", "Edit_2P.tcc" ]
     }
   ]
 }
