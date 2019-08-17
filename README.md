@@ -6,7 +6,7 @@
 ## 「Open Taiko Chart Infomation」 (.tci)
 このファイルには、その太鼓譜の名前やアーティスト、使用する音源のファイル名などの作品の情報と、各種難易度である「Open Taiko Chart Course」の情報が格納されます。
 ## 「Open Taiko Chart Course」 (.tcc)
-このファイルは、「Open Taiko Chart Infomation」から呼び出されます。このファイルには、実際の譜面内容が記述されます。
+このファイルは、「Open Taiko Chart Infomation」から呼び出されます。このファイルには、実際の譜面内容と固有の情報が記述されます。
 ## その他のファイル
 譜面で使用する音源ファイルや、動画ファイルなどがこれに当てはまります。「Open Taiko Chart Infomation」と同じフォルダに入れておく必要があります。対応するコーデックやコンテナは、各ソフトウェアの実装で変わります。
 
@@ -70,7 +70,13 @@
 | difficluty | その難易度の難易度を指定します。 | 文字列 | ``"difficluty": "oni"`` |
 | level | その難易度の難易度を指定します。 | 数値 | ``"level": 9`` |
 | single | その難易度の1人用譜面を指定します。 | 文字列 | ``"single": "Oni.tcc"`` |
-| multiple | その難易度のn人用譜面を指定します。 | 文字列 | ``"multiple": [ "Edit_1P.tcc", "Edit_2P.tcc" ]`` |
+| multiple | その難易度のn人用譜面を指定します。 | 配列、文字列 | ``"multiple": [ "Edit_1P.tcc", "Edit_2P.tcc" ]`` |
+
+
+
+| 変数名 | 説明 | 種類 | 例 |
+| --- | --- | --- | --- |
 | scoreinit | その難易度の初項を指定します。 | 数値 | ``"scoreinit": 800`` |
 | scorediff | その難易度の公差を指定します。 | 数値 | ``"scorediff": 200`` |
 | scoreshinuchi | その難易度の真打配点を指定します。 | 数値 | ``"scoreshinuchi": 1200`` |
+| balloon | その難易度のふうせん連打を指定します。 | 配列、数値 | ``"balloon": [ 6, 10, 24 ]`` |
