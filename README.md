@@ -3,7 +3,8 @@
 
 ## Rev.1
 
-[https://github.com/AioiLight/Open-Taiko-Chart/blob/master/Rev1_ja-JP.md](日本語)
+[日本語](https://github.com/AioiLight/Open-Taiko-Chart/blob/master/Rev1_ja-JP.md)
+
 (多言語への翻訳などContributionしてくれる方お待ちしております。)
 
 ## Rev.2
