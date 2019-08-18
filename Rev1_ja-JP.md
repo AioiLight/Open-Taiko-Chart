@@ -144,7 +144,7 @@
 
 ## デシリアライズ
 
-C#の場合、[Json.NET](https://github.com/JamesNK/Newtonsoft.Json)等を使用することで、そのままデシリアライズすることが可能です。
+JavaScriptの場合``eval()``や``JSON.parse``、C#の場合、[Json.NET](https://github.com/JamesNK/Newtonsoft.Json)等を使用することで、そのままデシリアライズすることが可能です。もちろん、他の言語でもシリアライザーがあればそのままデータを利用することができます。
 
 ```cs
 public class OpenTaikoChartInfomation
