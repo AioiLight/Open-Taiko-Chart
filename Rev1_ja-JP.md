@@ -33,6 +33,7 @@
   "audio": "Audio-Source.wav",
   "background": "Background-Image.png",
   "bpm": 160,
+  "offset": -2.416,
   "courses":
   [
     {
@@ -61,6 +62,7 @@
 | audio | その曲のファイル名を指定する。対応しているコーデック、コンテナはソフトウェアによって異なる。 | 文字列 | ``"audio":  "Audio-Source.wav"`` |
 | background | 再生時に表示される背景画像・動画を指定する。対応しているコーデック、コンテナはソフトウェアによって異なる。 | 文字列 | ``"background": "Background-Image.png"`` |
 | bpm | その曲の基本BPMを指定する。 | 数値 | ``"bpm": 160`` |
+| offset | その曲の1小節目が始まる時間を指定する。 | 数値 | ``"offset": 2.416`` |
 | courses | コースを情報を格納する。 | 配列、オブジェクト | (後述) |
 
 これらは、coursesの中のオブジェクトで使用可能なものです。各難易度の情報を指定するものです。
