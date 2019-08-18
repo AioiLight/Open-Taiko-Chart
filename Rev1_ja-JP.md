@@ -165,6 +165,8 @@ public class OpenTaikoChartInfomation
     public string Background { get; set; }
     [JsonProperty("bpm")]
     public double? BPM { get; set; }
+    [JsonProperty("offset")]
+    publioc double? Offset { get; set; }
     [JsonProperty("courses")]
     public OpenTaikoChartInfomation_Courses[] Courses { get; set; }
 }
