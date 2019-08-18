@@ -33,7 +33,7 @@
   "audio": "Audio-Source.wav",
   "background": "Background-Image.png",
   "bpm": 160,
-  "offset": -2.416,
+  "offset": 2.416,
   "courses":
   [
     {
