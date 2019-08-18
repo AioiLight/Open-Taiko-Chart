@@ -141,3 +141,55 @@
 | ``#gogobegin`` | ゴーゴータイムを開始します。 | - | ``#gogobegin`` |
 | ``#gogoend`` | ゴーゴータイムを終了します。 | - | ``#gogoend`` |
 | ``#delay n1`` | n1秒その後に続く譜面をずらします。 | n1: ずらす秒数。 | ``#delay 3.14`` |
+
+## デシリアライズ
+
+C#の場合、[Json.NET](https://github.com/JamesNK/Newtonsoft.Json)等を使用することで、そのままデシリアライズすることが可能です。
+
+```cs
+public class OpenTaikoChartInfomation
+{
+    [JsonProperty("title")]
+    public string Title { get; set; }
+    [JsonProperty("subtitle")]
+    public string SubTitle { get; set; }
+    [JsonProperty("artist")]
+    public string[] Artist { get; set; }
+    [JsonProperty("creator")]
+    public string[] Creator { get; set; }
+    [JsonProperty("audio")]
+    public string Audio { get; set; }
+    [JsonProperty("background")]
+    public string Background { get; set; }
+    [JsonProperty("bpm")]
+    public double? BPM { get; set; }
+    [JsonProperty("courses")]
+    public OpenTaikoChartInfomation_Courses[] Courses { get; set; }
+}
+
+public class OpenTaikoChartInfomation_Courses
+{
+    [JsonProperty("difficulty")]
+    public string Difficulty { get; set; }
+    [JsonProperty("level")]
+    public int? Level { get; set; }
+    [JsonProperty("single")]
+    public string Single { get; set; }
+    [JsonProperty("multiple")]
+    public string[] Multiple { get; set; }
+}
+
+public class OpenTaikoChartCourse
+{
+    [JsonProperty("scoreinit")]
+    public int? ScoreInit { get; set; }
+    [JsonProperty("scorediff")]
+    public int? ScoreDiff { get; set; }
+    [JsonProperty("scoreshinuchi")]
+    public int? ScoreShinuchi { get; set; }
+    [JsonProperty("balloon")]
+    public int?[] Balloon { get; set; }
+    [JsonProperty("measures")]
+    public string[][] Measures { get; set; }
+}
+```
