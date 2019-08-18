@@ -12,7 +12,6 @@
 
 ## これらのファイルの制約
 「Open Taiko Chart Infomation」は、「ひとつの作品」に対して2つ以上作成してはいけません。
-「Open Taiko Chart Course」は、難易度の数より多く作成することができますが、難易度の数分しか有効ではありません。
 
 # 「Open Taiko Chart Infomation」の記法
 
