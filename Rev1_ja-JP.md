@@ -79,7 +79,7 @@
 * 「Open Taiko Chart Course」では、フォーマットにJSONを採用しています。エンコーディングが「BOM無し UTF-8」である理由は、このJSONフォーマットで決まっているからです(HAVE TO ではなく MUST)。
 * JSONフォーマット採用しているため、多くのプログラミング言語ではデシリアライズが可能です。
 
-## 「Open Taiko Chart Infomation」の書き方
+## 「Open Taiko Chart Course」の書き方
 
 サンプル
 
