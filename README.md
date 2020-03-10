@@ -7,15 +7,13 @@
 
 (多言語への翻訳などContributionしてくれる方お待ちしております。)
 
-## Rev1.1
-
-[日本語](https://github.com/AioiLight/Open-Taiko-Chart/blob/master/Rev1.1_ja-JP.md)
-
 ## Rev.2
 
 段位認定の対応
 
-(現在仕様の策定中です。もしよろしければ、issueの方に挙がっていますのでよろしくお願いします。)
+[日本語](https://github.com/AioiLight/Open-Taiko-Chart/blob/master/Rev2_ja-JP.md)
+
+(多言語への翻訳などContributionしてくれる方お待ちしております。)
 
 ## Rev.3
 
