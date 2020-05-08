@@ -107,7 +107,7 @@
     "scorediff": 200,
     "scoreshinuchi": 1200,
     "balloon": [ 6, 10, 24 ],
-    "measure":
+    "measures":
     [
         [ "1" ],
         [ "3030" ],
