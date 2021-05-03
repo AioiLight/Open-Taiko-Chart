@@ -36,12 +36,12 @@
   "courses":
   [
     {
-      "difficluty": "oni",
+      "difficulty": "oni",
       "level": 9,
       "single": "Oni.tcc"
     },
     {
-      "difficluty": "edit",
+      "difficulty": "edit",
       "level": 10,
       "single": "Edit.tcc",
       "multiple": [ "Edit_1P.tcc", "Edit_2P.tcc" ]
@@ -68,7 +68,7 @@
 
 | 変数名 | 説明 | 種類 | 例 |
 | --- | --- | --- | --- |
-| difficluty | その難易度の難易度を指定します。 | 文字列 | ``"difficluty": "oni"`` |
+| difficulty | その難易度の難易度を指定します。 | 文字列 | ``"difficulty": "oni"`` |
 | level | その難易度の難易度を指定します。 | 数値 | ``"level": 9`` |
 | single | その難易度の1人用譜面を指定します。 | 文字列 | ``"single": "Oni.tcc"`` |
 | multiple | その難易度のn人用譜面を指定します。 | 配列、文字列 | ``"multiple": [ "Edit_1P.tcc", "Edit_2P.tcc" ]`` |
