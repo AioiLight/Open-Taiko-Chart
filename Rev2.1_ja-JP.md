@@ -50,7 +50,7 @@
   "courses":
   [
     {
-      "difficluty": "oni",
+      "difficulty": "oni",
       "level": 9,
       "single": "Oni.tcc"
     },
