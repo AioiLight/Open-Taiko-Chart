@@ -27,6 +27,10 @@
 
 [日本語](https://github.com/AioiLight/Open-Taiko-Chart/blob/master/Rev2.3_ja-JP.md)
 
+### Rev.2.4
+
+[日本語](https://github.com/AioiLight/Open-Taiko-Chart/blob/master/Rev2.4_ja-JP.md)
+
 ## Rev.3
 
 譜面分岐の対応
