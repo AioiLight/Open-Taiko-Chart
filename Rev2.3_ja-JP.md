@@ -5,34 +5,34 @@
 
 「Open Taiko Chart」では複数のファイルを使用し、「ひとつの作品」として成り立ちます。
 
-## 「Open Taiko Chart Infomation」 (.tci)
+## 「Open Taiko Chart Information」 (.tci)
 
 このファイルには、その太鼓譜の名前やアーティスト、使用する音源のファイル名などの作品の情報と、各種難易度である「Open Taiko Chart Course」の情報が格納されます。
 
 ## 「Open Taiko Chart Course」 (.tcc)
 
-このファイルは、「Open Taiko Chart Infomation」から呼び出されます。このファイルには、実際の譜面内容と固有の情報が記述されます。
+このファイルは、「Open Taiko Chart Information」から呼び出されます。このファイルには、実際の譜面内容と固有の情報が記述されます。
 
 ## 「Open Taiko Chart Medley」 (.tcm)
 
-このファイルは、複数の「Open Taiko Chart Infomation」を使用して、メドレー形式で再生する機能です。また、条件を付与することで段位認定としても機能します。
+このファイルは、複数の「Open Taiko Chart Information」を使用して、メドレー形式で再生する機能です。また、条件を付与することで段位認定としても機能します。
 
 ## その他のファイル
 
-譜面で使用する音源ファイルや、動画ファイルなどがこれに当てはまります。「Open Taiko Chart Infomation」と同じフォルダに入れておく必要があります。対応するコーデックやコンテナは、各ソフトウェアの実装で変わります。
+譜面で使用する音源ファイルや、動画ファイルなどがこれに当てはまります。「Open Taiko Chart Information」と同じフォルダに入れておく必要があります。対応するコーデックやコンテナは、各ソフトウェアの実装で変わります。
 
 ## これらのファイルの制約
 
-* 「Open Taiko Chart Infomation」は、「ひとつの作品」に対して 2 つ以上作成してはいけません。
-* 「Open Taiko Chart Medley」は、1 つ以上の「Open Taiko Chart Infomation」を記述する必要があります。
+* 「Open Taiko Chart Information」は、「ひとつの作品」に対して 2 つ以上作成してはいけません。
+* 「Open Taiko Chart Medley」は、1 つ以上の「Open Taiko Chart Information」を記述する必要があります。
 
-# 「Open Taiko Chart Infomation」の記法
+# 「Open Taiko Chart Information」の記法
 
 * エンコーディングは「BOM 無し UTF-8」です。改行コードの指定はありません(理由は後述)。
-* 「Open Taiko Chart Infomation」では、フォーマットに JSON を採用しています。エンコーディングが「BOM 無し UTF-8」である理由は、このJSONフォーマットで決まっているからです(HAVE TO ではなく MUST)。改行してもしなくても問題ありません。
+* 「Open Taiko Chart Information」では、フォーマットに JSON を採用しています。エンコーディングが「BOM 無し UTF-8」である理由は、このJSONフォーマットで決まっているからです(HAVE TO ではなく MUST)。改行してもしなくても問題ありません。
 * JSON フォーマット採用しているため、多くのプログラミング言語ではデシリアライズが可能です。
 
-## 「Open Taiko Chart Infomation」の書き方
+## 「Open Taiko Chart Information」の書き方
 
 サンプル
 
@@ -170,7 +170,7 @@
 JavaScript の場合 ``eval()`` や ``JSON.parse`` 、C# の場合、[Json.NET](https://github.com/JamesNK/Newtonsoft.Json) 等を使用することで、そのままデシリアライズすることが可能です。もちろん、他の言語でもシリアライザーがあればそのままデータを利用することができます。
 
 ```cs
-public class OpenTaikoChartInfomation
+public class OpenTaikoChartInformation
 {
     [JsonProperty("title")]
     public string Title { get; set; }
@@ -189,10 +189,10 @@ public class OpenTaikoChartInfomation
     [JsonProperty("offset")]
     public double? Offset { get; set; }
     [JsonProperty("courses")]
-    public OpenTaikoChartInfomation_Courses[] Courses { get; set; }
+    public OpenTaikoChartInformation_Courses[] Courses { get; set; }
 }
 
-public class OpenTaikoChartInfomation_Courses
+public class OpenTaikoChartInformation_Courses
 {
     [JsonProperty("difficulty")]
     public string Difficulty { get; set; }
@@ -284,7 +284,7 @@ charts の中はこのようなパラメータがあります。
 
 | 変数名 | 説明 | 種類 | 例 |
 | --- | --- | --- | --- |
-| file | Open Taiko Chart Infomation のファイル名。 | 文字列 | ``"file": "Song-1\\Sample-Master.tci"`` |
+| file | Open Taiko Chart Information のファイル名。 | 文字列 | ``"file": "Song-1\\Sample-Master.tci"`` |
 | difficulty | 難易度。その難易度が存在しなければ、1 番難易度が低いコースを使用する。 | 文字列 | ``"difficulty": "oni"`` |
 
 * ファイル名は、自分自身 (.tcmファイル) からの相対パスを入力します。JSON フォーマットの使用上、パスの区切りである``\``は``\\``と記述する必要があります。
